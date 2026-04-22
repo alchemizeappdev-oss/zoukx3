@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "created": "2026-04-21T07:26:17.342Z",
+  "modified": "2026-04-21T07:28:57.820Z",
+  "objects": [
+    {
+      "id": "lhrz1c0m7",
+      "type": "ellipse",
+      "x": -26,
+      "y": 92,
+      "width": 234,
+      "height": 144,
+      "data": {
+        "fill": null,
+        "stroke": "#8B2500",
+        "strokeWidth": 2
+      }
+    }
+  ]
+}
