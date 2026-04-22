@@ -1,0 +1,37 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(256)">
+      <stop stop-color="#C81428" stop-opacity="0.38"/>
+      <stop offset="0.55" stop-color="#7A0B16" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#040405" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="96" y1="96" x2="416" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F4FA"/>
+      <stop offset="0.2" stop-color="#A8A8B2"/>
+      <stop offset="0.5" stop-color="#E83548"/>
+      <stop offset="0.8" stop-color="#8E0F1D"/>
+      <stop offset="1" stop-color="#F4F4FA"/>
+    </linearGradient>
+    <linearGradient id="zFill" x1="150" y1="140" x2="362" y2="372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.2" stop-color="#D8D8E8"/>
+      <stop offset="0.5" stop-color="#E83548"/>
+      <stop offset="1" stop-color="#7A0B16"/>
+    </linearGradient>
+    <filter id="softGlow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#040405"/>
+  <circle cx="256" cy="256" r="190" fill="url(#bgGlow)"/>
+  <circle cx="256" cy="256" r="164" stroke="url(#ring)" stroke-width="18" fill="#0B0B0F"/>
+  <circle cx="256" cy="256" r="134" stroke="#1A1A22" stroke-width="2" fill="none"/>
+  <g filter="url(#softGlow)">
+    <path d="M169 156H343L187 338H343" stroke="url(#zFill)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="256" cy="256" r="206" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+</svg>
